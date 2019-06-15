@@ -11,6 +11,7 @@
 		14B4CABB22B4F5F600DDD5C3 /* ValidPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4CABA22B4F5F600DDD5C3 /* ValidPalindromeTests.swift */; };
 		14B4CABD22B4F5F600DDD5C3 /* leetcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B4CAAF22B4F5F600DDD5C3 /* leetcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14B4CAC722B532E300DDD5C3 /* ReverseIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4CAC622B532E300DDD5C3 /* ReverseIntegerTests.swift */; };
+		14B4CAC922B53E1D00DDD5C3 /* PalindromeNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4CAC822B53E1D00DDD5C3 /* PalindromeNumberTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		14B4CABA22B4F5F600DDD5C3 /* ValidPalindromeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidPalindromeTests.swift; sourceTree = "<group>"; };
 		14B4CABC22B4F5F600DDD5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14B4CAC622B532E300DDD5C3 /* ReverseIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseIntegerTests.swift; sourceTree = "<group>"; };
+		14B4CAC822B53E1D00DDD5C3 /* PalindromeNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumberTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		14B4CAB922B4F5F600DDD5C3 /* leetcodeTests */ = {
 			isa = PBXGroup;
 			children = (
+				14B4CAC822B53E1D00DDD5C3 /* PalindromeNumberTests.swift */,
 				14B4CAC622B532E300DDD5C3 /* ReverseIntegerTests.swift */,
 				14B4CABA22B4F5F600DDD5C3 /* ValidPalindromeTests.swift */,
 				14B4CABC22B4F5F600DDD5C3 /* Info.plist */,
@@ -204,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14B4CAC922B53E1D00DDD5C3 /* PalindromeNumberTests.swift in Sources */,
 				14B4CABB22B4F5F600DDD5C3 /* ValidPalindromeTests.swift in Sources */,
 				14B4CAC722B532E300DDD5C3 /* ReverseIntegerTests.swift in Sources */,
 			);
