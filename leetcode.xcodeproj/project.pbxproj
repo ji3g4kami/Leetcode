@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142D6BF0230848FD005E618D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D6BEF230848FD005E618D /* Node.swift */; };
+		142D6BF223084915005E618D /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D6BF123084915005E618D /* LinkedList.swift */; };
+		142D6BF423084958005E618D /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D6BF323084958005E618D /* LinkedListTests.swift */; };
 		14B4CAB622B4F5F600DDD5C3 /* leetcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4CAAC22B4F5F600DDD5C3 /* leetcode.framework */; };
 		14B4CABB22B4F5F600DDD5C3 /* ValidPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4CABA22B4F5F600DDD5C3 /* ValidPalindromeTests.swift */; };
 		14B4CABD22B4F5F600DDD5C3 /* leetcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B4CAAF22B4F5F600DDD5C3 /* leetcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,6 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		142D6BEF230848FD005E618D /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		142D6BF123084915005E618D /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		142D6BF323084958005E618D /* LinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTests.swift; sourceTree = "<group>"; };
 		14B4CAAC22B4F5F600DDD5C3 /* leetcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = leetcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B4CAAF22B4F5F600DDD5C3 /* leetcode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = leetcode.h; sourceTree = "<group>"; };
 		14B4CAB022B4F5F600DDD5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		142D6BF523084DBD005E618D /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				142D6BEF230848FD005E618D /* Node.swift */,
+				142D6BF123084915005E618D /* LinkedList.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
 		14B4CAA222B4F5F600DDD5C3 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +90,7 @@
 		14B4CAAE22B4F5F600DDD5C3 /* leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				142D6BF523084DBD005E618D /* LinkedList */,
 				14B4CAAF22B4F5F600DDD5C3 /* leetcode.h */,
 				14B4CAB022B4F5F600DDD5C3 /* Info.plist */,
 			);
@@ -87,6 +103,7 @@
 				14B4CAC822B53E1D00DDD5C3 /* PalindromeNumberTests.swift */,
 				14B4CAC622B532E300DDD5C3 /* ReverseIntegerTests.swift */,
 				14B4CABA22B4F5F600DDD5C3 /* ValidPalindromeTests.swift */,
+				142D6BF323084958005E618D /* LinkedListTests.swift */,
 				14B4CABC22B4F5F600DDD5C3 /* Info.plist */,
 			);
 			path = leetcodeTests;
@@ -154,6 +171,7 @@
 				TargetAttributes = {
 					14B4CAAB22B4F5F600DDD5C3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1030;
 					};
 					14B4CAB422B4F5F600DDD5C3 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -200,6 +218,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142D6BF0230848FD005E618D /* Node.swift in Sources */,
+				142D6BF223084915005E618D /* LinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B4CAC922B53E1D00DDD5C3 /* PalindromeNumberTests.swift in Sources */,
+				142D6BF423084958005E618D /* LinkedListTests.swift in Sources */,
 				14B4CABB22B4F5F600DDD5C3 /* ValidPalindromeTests.swift in Sources */,
 				14B4CAC722B532E300DDD5C3 /* ReverseIntegerTests.swift in Sources */,
 			);
@@ -349,6 +370,7 @@
 		14B4CAC122B4F5F600DDD5C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -365,6 +387,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dengli.leetcode;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,6 +396,7 @@
 		14B4CAC222B4F5F600DDD5C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -397,6 +421,7 @@
 		14B4CAC422B4F5F600DDD5C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = leetcodeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -414,6 +439,7 @@
 		14B4CAC522B4F5F600DDD5C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = leetcodeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
