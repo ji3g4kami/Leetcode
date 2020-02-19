@@ -28,5 +28,32 @@ class ValidPalindromeTests: XCTestCase {
         let rightSubString = String(modifiedString.suffix(length/2))
         return leftSubString == String(rightSubString.reversed())
     }
+    
+//    func linearPalinedrome(_ s: String) -> Bool {
+//        var i = 0
+//        var j = s.count - 1
+//
+//        while i < j {
+//            while s[i...i]. {
+//
+//            }
+//        }
+//    }
 
+    
+    func testExample() {
+        let string = "Milky Way 🐮"
+        for char in string {
+            print(char)
+        }
+        print(string.count)
+        print(string.isEmpty)
+        print(string.dropFirst())
+        print(string.reversed())
+        let newString = string.filter { char in
+            let isASCII = char.unicodeScalars.reduce(true, { $0 && $1.isASCII })
+            return isASCII
+        }
+        print(newString)
+    }
 }

@@ -10,6 +10,8 @@
 		142D6BF0230848FD005E618D /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D6BEF230848FD005E618D /* Node.swift */; };
 		142D6BF223084915005E618D /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D6BF123084915005E618D /* LinkedList.swift */; };
 		142D6BF423084958005E618D /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D6BF323084958005E618D /* LinkedListTests.swift */; };
+		145E707123FBDEC60097B79D /* TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E707023FBDEC60097B79D /* TwoSumTests.swift */; };
+		14655DCC23DD3BD8007C4D18 /* ReverseStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14655DCB23DD3BD8007C4D18 /* ReverseStringTests.swift */; };
 		14B4CAB622B4F5F600DDD5C3 /* leetcode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14B4CAAC22B4F5F600DDD5C3 /* leetcode.framework */; };
 		14B4CABB22B4F5F600DDD5C3 /* ValidPalindromeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4CABA22B4F5F600DDD5C3 /* ValidPalindromeTests.swift */; };
 		14B4CABD22B4F5F600DDD5C3 /* leetcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B4CAAF22B4F5F600DDD5C3 /* leetcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +33,8 @@
 		142D6BEF230848FD005E618D /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		142D6BF123084915005E618D /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		142D6BF323084958005E618D /* LinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTests.swift; sourceTree = "<group>"; };
+		145E707023FBDEC60097B79D /* TwoSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTests.swift; sourceTree = "<group>"; };
+		14655DCB23DD3BD8007C4D18 /* ReverseStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseStringTests.swift; sourceTree = "<group>"; };
 		14B4CAAC22B4F5F600DDD5C3 /* leetcode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = leetcode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14B4CAAF22B4F5F600DDD5C3 /* leetcode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = leetcode.h; sourceTree = "<group>"; };
 		14B4CAB022B4F5F600DDD5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,6 +109,8 @@
 				14B4CABA22B4F5F600DDD5C3 /* ValidPalindromeTests.swift */,
 				142D6BF323084958005E618D /* LinkedListTests.swift */,
 				14B4CABC22B4F5F600DDD5C3 /* Info.plist */,
+				14655DCB23DD3BD8007C4D18 /* ReverseStringTests.swift */,
+				145E707023FBDEC60097B79D /* TwoSumTests.swift */,
 			);
 			path = leetcodeTests;
 			sourceTree = "<group>";
@@ -229,7 +235,9 @@
 			files = (
 				14B4CAC922B53E1D00DDD5C3 /* PalindromeNumberTests.swift in Sources */,
 				142D6BF423084958005E618D /* LinkedListTests.swift in Sources */,
+				145E707123FBDEC60097B79D /* TwoSumTests.swift in Sources */,
 				14B4CABB22B4F5F600DDD5C3 /* ValidPalindromeTests.swift in Sources */,
+				14655DCC23DD3BD8007C4D18 /* ReverseStringTests.swift in Sources */,
 				14B4CAC722B532E300DDD5C3 /* ReverseIntegerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
