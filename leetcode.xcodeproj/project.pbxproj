@@ -21,6 +21,7 @@
 		14B4CABD22B4F5F600DDD5C3 /* leetcode.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B4CAAF22B4F5F600DDD5C3 /* leetcode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14B4CAC722B532E300DDD5C3 /* ReverseIntegerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4CAC622B532E300DDD5C3 /* ReverseIntegerTests.swift */; };
 		14B4CAC922B53E1D00DDD5C3 /* PalindromeNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14B4CAC822B53E1D00DDD5C3 /* PalindromeNumberTests.swift */; };
+		14F59D7624139DB200F638B7 /* CopyOnWriteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F59D7524139DB200F638B7 /* CopyOnWriteTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		14B4CABC22B4F5F600DDD5C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		14B4CAC622B532E300DDD5C3 /* ReverseIntegerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseIntegerTests.swift; sourceTree = "<group>"; };
 		14B4CAC822B53E1D00DDD5C3 /* PalindromeNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PalindromeNumberTests.swift; sourceTree = "<group>"; };
+		14F59D7524139DB200F638B7 /* CopyOnWriteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyOnWriteTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				143590AA23FD095A00B16809 /* FourSumTests.swift */,
 				143590AC23FD0A0500B16809 /* ThreeSumTests.swift */,
 				1471BE2323FFFB180016A57F /* HashTableTests.swift */,
+				14F59D7524139DB200F638B7 /* CopyOnWriteTests.swift */,
 			);
 			path = leetcodeTests;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B4CAC922B53E1D00DDD5C3 /* PalindromeNumberTests.swift in Sources */,
+				14F59D7624139DB200F638B7 /* CopyOnWriteTests.swift in Sources */,
 				1471BE2423FFFB180016A57F /* HashTableTests.swift in Sources */,
 				143590AB23FD095A00B16809 /* FourSumTests.swift in Sources */,
 				142D6BF423084958005E618D /* LinkedListTests.swift in Sources */,
