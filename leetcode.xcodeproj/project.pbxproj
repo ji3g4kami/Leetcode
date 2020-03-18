@@ -12,6 +12,7 @@
 		142D6BF423084958005E618D /* LinkedListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142D6BF323084958005E618D /* LinkedListTests.swift */; };
 		143590AB23FD095A00B16809 /* FourSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143590AA23FD095A00B16809 /* FourSumTests.swift */; };
 		143590AD23FD0A0500B16809 /* ThreeSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143590AC23FD0A0500B16809 /* ThreeSumTests.swift */; };
+		145CFE0624221EC400EE1ADA /* MaximumSubarrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145CFE0524221EC400EE1ADA /* MaximumSubarrayTests.swift */; };
 		145E707123FBDEC60097B79D /* TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E707023FBDEC60097B79D /* TwoSumTests.swift */; };
 		14655DCC23DD3BD8007C4D18 /* ReverseStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14655DCB23DD3BD8007C4D18 /* ReverseStringTests.swift */; };
 		1471BE2223FFBDE80016A57F /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1471BE2123FFBDE80016A57F /* HashTable.swift */; };
@@ -43,6 +44,7 @@
 		142D6BF323084958005E618D /* LinkedListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedListTests.swift; sourceTree = "<group>"; };
 		143590AA23FD095A00B16809 /* FourSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSumTests.swift; sourceTree = "<group>"; };
 		143590AC23FD0A0500B16809 /* ThreeSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumTests.swift; sourceTree = "<group>"; };
+		145CFE0524221EC400EE1ADA /* MaximumSubarrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumSubarrayTests.swift; sourceTree = "<group>"; };
 		145E707023FBDEC60097B79D /* TwoSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTests.swift; sourceTree = "<group>"; };
 		14655DCB23DD3BD8007C4D18 /* ReverseStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseStringTests.swift; sourceTree = "<group>"; };
 		1471BE2123FFBDE80016A57F /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				1493436924212A08008CDC61 /* Palindrome */,
 				14934368242129E1008CDC61 /* Sum */,
 				14B4CAC622B532E300DDD5C3 /* ReverseIntegerTests.swift */,
+				145CFE0524221EC400EE1ADA /* MaximumSubarrayTests.swift */,
 				142D6BF323084958005E618D /* LinkedListTests.swift */,
 				14655DCB23DD3BD8007C4D18 /* ReverseStringTests.swift */,
 				1471BE2323FFFB180016A57F /* HashTableTests.swift */,
@@ -291,6 +294,7 @@
 				145E707123FBDEC60097B79D /* TwoSumTests.swift in Sources */,
 				14B4CABB22B4F5F600DDD5C3 /* ValidPalindromeTests.swift in Sources */,
 				14655DCC23DD3BD8007C4D18 /* ReverseStringTests.swift in Sources */,
+				145CFE0624221EC400EE1ADA /* MaximumSubarrayTests.swift in Sources */,
 				143590AD23FD0A0500B16809 /* ThreeSumTests.swift in Sources */,
 				14B4CAC722B532E300DDD5C3 /* ReverseIntegerTests.swift in Sources */,
 				149E599024216B2000902DEB /* MaximunDepthOfBinaryTreeTests.swift in Sources */,
