@@ -13,6 +13,7 @@
 		143590AB23FD095A00B16809 /* FourSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143590AA23FD095A00B16809 /* FourSumTests.swift */; };
 		143590AD23FD0A0500B16809 /* ThreeSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143590AC23FD0A0500B16809 /* ThreeSumTests.swift */; };
 		145CFE0624221EC400EE1ADA /* MaximumSubarrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145CFE0524221EC400EE1ADA /* MaximumSubarrayTests.swift */; };
+		145CFE0924222B2800EE1ADA /* ClimbingStairsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145CFE0824222B2800EE1ADA /* ClimbingStairsTests.swift */; };
 		145E707123FBDEC60097B79D /* TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E707023FBDEC60097B79D /* TwoSumTests.swift */; };
 		14655DCC23DD3BD8007C4D18 /* ReverseStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14655DCB23DD3BD8007C4D18 /* ReverseStringTests.swift */; };
 		1471BE2223FFBDE80016A57F /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1471BE2123FFBDE80016A57F /* HashTable.swift */; };
@@ -45,6 +46,7 @@
 		143590AA23FD095A00B16809 /* FourSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSumTests.swift; sourceTree = "<group>"; };
 		143590AC23FD0A0500B16809 /* ThreeSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeSumTests.swift; sourceTree = "<group>"; };
 		145CFE0524221EC400EE1ADA /* MaximumSubarrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximumSubarrayTests.swift; sourceTree = "<group>"; };
+		145CFE0824222B2800EE1ADA /* ClimbingStairsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStairsTests.swift; sourceTree = "<group>"; };
 		145E707023FBDEC60097B79D /* TwoSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTests.swift; sourceTree = "<group>"; };
 		14655DCB23DD3BD8007C4D18 /* ReverseStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseStringTests.swift; sourceTree = "<group>"; };
 		1471BE2123FFBDE80016A57F /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
@@ -89,6 +91,15 @@
 				142D6BF123084915005E618D /* LinkedList.swift */,
 			);
 			path = LinkedList;
+			sourceTree = "<group>";
+		};
+		145CFE0724222B0100EE1ADA /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				145CFE0524221EC400EE1ADA /* MaximumSubarrayTests.swift */,
+				145CFE0824222B2800EE1ADA /* ClimbingStairsTests.swift */,
+			);
+			path = Dynamic;
 			sourceTree = "<group>";
 		};
 		14934368242129E1008CDC61 /* Sum */ = {
@@ -152,11 +163,11 @@
 		14B4CAB922B4F5F600DDD5C3 /* leetcodeTests */ = {
 			isa = PBXGroup;
 			children = (
+				145CFE0724222B0100EE1ADA /* Dynamic */,
 				1493436A242135B7008CDC61 /* Tree */,
 				1493436924212A08008CDC61 /* Palindrome */,
 				14934368242129E1008CDC61 /* Sum */,
 				14B4CAC622B532E300DDD5C3 /* ReverseIntegerTests.swift */,
-				145CFE0524221EC400EE1ADA /* MaximumSubarrayTests.swift */,
 				142D6BF323084958005E618D /* LinkedListTests.swift */,
 				14655DCB23DD3BD8007C4D18 /* ReverseStringTests.swift */,
 				1471BE2323FFFB180016A57F /* HashTableTests.swift */,
@@ -287,6 +298,7 @@
 			files = (
 				14B4CAC922B53E1D00DDD5C3 /* PalindromeNumberTests.swift in Sources */,
 				14F59D7624139DB200F638B7 /* CopyOnWriteTests.swift in Sources */,
+				145CFE0924222B2800EE1ADA /* ClimbingStairsTests.swift in Sources */,
 				1471BE2423FFFB180016A57F /* HashTableTests.swift in Sources */,
 				1493436C242135D1008CDC61 /* SameTreeTests.swift in Sources */,
 				143590AB23FD095A00B16809 /* FourSumTests.swift in Sources */,
@@ -491,6 +503,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ND2LGZT6B5;
 				INFOPLIST_FILE = leetcodeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -509,6 +522,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ND2LGZT6B5;
 				INFOPLIST_FILE = leetcodeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
