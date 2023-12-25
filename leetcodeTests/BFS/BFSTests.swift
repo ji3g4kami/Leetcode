@@ -12,29 +12,47 @@ final class BFSTests: XCTestCase {
     
     let expectedOrder = [1, 2, 4, 3, 5, 6, 12]
     
-    func resolveBFS(_ tree: SimpleTree) -> [Int] {
-        var result = [Int]()
-        var queueTree = [tree]
+    struct TreeNode {
+        let value: Int
+        var children: [TreeNode]
         
-        while !queueTree.isEmpty {
-            let current = queueTree.removeFirst()
-            
+        init(value: Int, children: [TreeNode] = []) {
+            self.value = value
+            self.children = children
+        }
+        
+        mutating func addChild(_ node: TreeNode) {
+            self.children.append(node)
+        }
+    }
+    
+    func bfs(_ node: TreeNode) -> [Int] {
+        var result = [Int]()
+        var queue: [TreeNode] = [node]
+        
+        while !queue.isEmpty {
+            let current = queue.removeFirst()
             result.append(current.value)
             
-            if let children = current.children {
-                for tree in children {
-                    queueTree.append(tree)
-                }
+            for child in current.children {
+                queue.append(child)
             }
-            
         }
+               
         return result
     }
-
-    func testBFS() throws {
-        let simpleNode = SimpleTree(value: 2, children: [SimpleTree(value: 5), SimpleTree(value: 6)])
-        let simpleRoot = SimpleTree(value: 1, children: [simpleNode, SimpleTree(value: 4), SimpleTree(value: 3, children: [SimpleTree(value: 12)])])
+    
+    func testBFSWithRecursion() throws {
+        let node4 = TreeNode(value: 4)
+        let node5 = TreeNode(value: 5)
+        let node6 = TreeNode(value: 6)
+        let node12 = TreeNode(value: 12)
         
-        XCTAssertEqual(expectedOrder, resolveBFS(simpleRoot))
+        let node2 = TreeNode(value: 2, children: [node5, node6])
+        let node3 = TreeNode(value: 3, children: [node12])
+        
+        let rootNode1 = TreeNode(value: 1, children: [node2, node4, node3])
+        
+        XCTAssertEqual(expectedOrder, bfs(rootNode1))
     }
 }

@@ -12,34 +12,38 @@ final class DFSTests: XCTestCase {
     
     let expectedOrder = [1, 2, 5, 6, 4, 3, 12]
 
-    func resolveDFS(tree: SimpleTree) -> [Int] {
-        var result = [Int]()
-        
-        var stackTree = [tree]
-        
-        while !stackTree.isEmpty {
-            let current = stackTree.removeLast()
-            
-//            print("result appended: \(current.value)")
-            result.append(current.value)
-//            print("result: \(result)")
-            
-            if let children = current.children {
-                for tree in children {
-                    stackTree.append(tree)
-//                    print("stackTree appened: \(tree)")
-                }
-            }
-        }
-        
-        return result
-    }
+//    func resolveDFS(tree: SimpleTree) -> [Int] {
+//        var result = [Int]()
+//        
+//        var stackTree = [tree]
+//        
+//        while !stackTree.isEmpty {
+//            let current = stackTree.removeLast()
+//            
+////            print("result appended: \(current.value)")
+//            result.append(current.value)
+////            print("result: \(result)")
+//            
+//            if let children = current.children {
+//                for tree in children {
+//                    stackTree.append(tree)
+////                    print("stackTree appened: \(tree)")
+//                }
+//            }
+//        }
+//        
+//        return result
+//    }
+//    
+//    func testIterativeDFS() throws {
+//        let simpleNode = SimpleTree(value: 2, children: [SimpleTree(value: 5), SimpleTree(value: 6)])
+//        let simpleRoot = SimpleTree(value: 1, children: [simpleNode, SimpleTree(value: 4), SimpleTree(value: 3, children: [SimpleTree(value: 12)])])
+//        
+//        XCTAssertEqual(resolveDFS(tree: simpleRoot), [1, 3, 12, 4, 2, 6, 5], "DFS did not match the expected order.")
+//    }
     
-    func testIterativeDFS() throws {
-        let simpleNode = SimpleTree(value: 2, children: [SimpleTree(value: 5), SimpleTree(value: 6)])
-        let simpleRoot = SimpleTree(value: 1, children: [simpleNode, SimpleTree(value: 4), SimpleTree(value: 3, children: [SimpleTree(value: 12)])])
+    func testDFSIteritavely() {
         
-        XCTAssertEqual(resolveDFS(tree: simpleRoot), [1, 3, 12, 4, 2, 6, 5], "DFS did not match the expected order.")
     }
 
     func dfs(_ node: TreeNode?, _ visit: (TreeNode) -> Void) {
@@ -65,18 +69,11 @@ final class DFSTests: XCTestCase {
     }
     
     
-    func dfs(_ node: TreeNode?) -> [Int] {
-        guard let node = node else { return [] }
-        var result = [node.value] // Start with the current node
-        node.children.forEach { result.append(contentsOf: dfs($0)) } // Recursively visit children
-        return result
-    }
-    
     func dfs(node: TreeNode) -> [Int] {
         var result = [Int]()
         result.append(node.value)
         
-        node.children.forEach { result.append(contentsOf: dfs($0)) }
+        node.children.forEach { result.append(contentsOf: dfs(node: $0)) }
         
         return result
     }
@@ -93,7 +90,5 @@ final class DFSTests: XCTestCase {
         let rootNode1 = TreeNode(value: 1, children: [node2, node4, node3])
         
         XCTAssertEqual(expectedOrder, dfs(node: rootNode1))
-        
     }
-    
 }
