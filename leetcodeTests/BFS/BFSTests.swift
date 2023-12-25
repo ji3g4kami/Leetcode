@@ -10,6 +10,8 @@ import XCTest
 
 final class BFSTests: XCTestCase {
     
+    let expectedOrder = [1, 2, 4, 3, 5, 6, 12]
+    
     func resolveBFS(_ tree: SimpleTree) -> [Int] {
         var result = [Int]()
         var queueTree = [tree]
@@ -33,6 +35,6 @@ final class BFSTests: XCTestCase {
         let simpleNode = SimpleTree(value: 2, children: [SimpleTree(value: 5), SimpleTree(value: 6)])
         let simpleRoot = SimpleTree(value: 1, children: [simpleNode, SimpleTree(value: 4), SimpleTree(value: 3, children: [SimpleTree(value: 12)])])
         
-        XCTAssertEqual([1, 2, 4, 3, 5, 6, 12], resolveBFS(simpleRoot))
+        XCTAssertEqual(expectedOrder, resolveBFS(simpleRoot))
     }
 }
