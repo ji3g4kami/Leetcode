@@ -16,7 +16,10 @@
 		145CFE0924222B2800EE1ADA /* ClimbingStairsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145CFE0824222B2800EE1ADA /* ClimbingStairsTests.swift */; };
 		145CFE0B24224D6100EE1ADA /* HourGlassSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145CFE0A24224D6100EE1ADA /* HourGlassSumTests.swift */; };
 		145E707123FBDEC60097B79D /* TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145E707023FBDEC60097B79D /* TwoSumTests.swift */; };
+		14632B9F2B39E77B00BA3297 /* DFSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14632B9E2B39E77B00BA3297 /* DFSTests.swift */; };
 		14655DCC23DD3BD8007C4D18 /* ReverseStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14655DCB23DD3BD8007C4D18 /* ReverseStringTests.swift */; };
+		1466A7F22B39DB7800CB4CBA /* SimpleTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466A7F12B39DB7800CB4CBA /* SimpleTree.swift */; };
+		1466A7F42B39DC7E00CB4CBA /* BFSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1466A7F32B39DC7E00CB4CBA /* BFSTests.swift */; };
 		1471BE2223FFBDE80016A57F /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1471BE2123FFBDE80016A57F /* HashTable.swift */; };
 		1471BE2423FFFB180016A57F /* HashTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1471BE2323FFFB180016A57F /* HashTableTests.swift */; };
 		1493436C242135D1008CDC61 /* SameTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1493436B242135D1008CDC61 /* SameTreeTests.swift */; };
@@ -50,7 +53,10 @@
 		145CFE0824222B2800EE1ADA /* ClimbingStairsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimbingStairsTests.swift; sourceTree = "<group>"; };
 		145CFE0A24224D6100EE1ADA /* HourGlassSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourGlassSumTests.swift; sourceTree = "<group>"; };
 		145E707023FBDEC60097B79D /* TwoSumTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoSumTests.swift; sourceTree = "<group>"; };
+		14632B9E2B39E77B00BA3297 /* DFSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFSTests.swift; sourceTree = "<group>"; };
 		14655DCB23DD3BD8007C4D18 /* ReverseStringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseStringTests.swift; sourceTree = "<group>"; };
+		1466A7F12B39DB7800CB4CBA /* SimpleTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTree.swift; sourceTree = "<group>"; };
+		1466A7F32B39DC7E00CB4CBA /* BFSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFSTests.swift; sourceTree = "<group>"; };
 		1471BE2123FFBDE80016A57F /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
 		1471BE2323FFFB180016A57F /* HashTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTableTests.swift; sourceTree = "<group>"; };
 		1493436B242135D1008CDC61 /* SameTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SameTreeTests.swift; sourceTree = "<group>"; };
@@ -102,6 +108,23 @@
 				145CFE0824222B2800EE1ADA /* ClimbingStairsTests.swift */,
 			);
 			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		1466A7EF2B39DB2900CB4CBA /* BFS */ = {
+			isa = PBXGroup;
+			children = (
+				1466A7F32B39DC7E00CB4CBA /* BFSTests.swift */,
+			);
+			path = BFS;
+			sourceTree = "<group>";
+		};
+		1466A7F02B39DB3400CB4CBA /* DFS */ = {
+			isa = PBXGroup;
+			children = (
+				1466A7F12B39DB7800CB4CBA /* SimpleTree.swift */,
+				14632B9E2B39E77B00BA3297 /* DFSTests.swift */,
+			);
+			path = DFS;
 			sourceTree = "<group>";
 		};
 		14934368242129E1008CDC61 /* Sum */ = {
@@ -165,6 +188,8 @@
 		14B4CAB922B4F5F600DDD5C3 /* leetcodeTests */ = {
 			isa = PBXGroup;
 			children = (
+				1466A7F02B39DB3400CB4CBA /* DFS */,
+				1466A7EF2B39DB2900CB4CBA /* BFS */,
 				145CFE0724222B0100EE1ADA /* Dynamic */,
 				1493436A242135B7008CDC61 /* Tree */,
 				1493436924212A08008CDC61 /* Palindrome */,
@@ -300,13 +325,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				14B4CAC922B53E1D00DDD5C3 /* PalindromeNumberTests.swift in Sources */,
+				1466A7F42B39DC7E00CB4CBA /* BFSTests.swift in Sources */,
 				14F59D7624139DB200F638B7 /* CopyOnWriteTests.swift in Sources */,
 				145CFE0B24224D6100EE1ADA /* HourGlassSumTests.swift in Sources */,
 				145CFE0924222B2800EE1ADA /* ClimbingStairsTests.swift in Sources */,
 				1471BE2423FFFB180016A57F /* HashTableTests.swift in Sources */,
 				1493436C242135D1008CDC61 /* SameTreeTests.swift in Sources */,
+				14632B9F2B39E77B00BA3297 /* DFSTests.swift in Sources */,
 				143590AB23FD095A00B16809 /* FourSumTests.swift in Sources */,
 				142D6BF423084958005E618D /* LinkedListTests.swift in Sources */,
+				1466A7F22B39DB7800CB4CBA /* SimpleTree.swift in Sources */,
 				145E707123FBDEC60097B79D /* TwoSumTests.swift in Sources */,
 				14B4CABB22B4F5F600DDD5C3 /* ValidPalindromeTests.swift in Sources */,
 				14655DCC23DD3BD8007C4D18 /* ReverseStringTests.swift in Sources */,
